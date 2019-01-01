@@ -1,0 +1,25 @@
+{
+  "name": "relay",
+  "version": "0.0.1",
+  "description": "A project",
+  "main": "./sender.js",
+  "private": true,
+  "scripts": {
+    "mock_k8s_api_server": "node ./mock_k8s_api_server/main.js",
+    "front_proxy": "node ./front/front_proxy.js",
+    "mock_k8s_kubelet": "node ./mock_k8s_kubelet/main.js",
+    "end_proxy": "node ./end/end_proxy.js"
+  },
+  "dependencies": {
+    "hyco-ws": "^1.0.5",
+    "ws": "~6.1.2"
+  },
+  "devDependencies": {
+    "hyco-ws": "^1.0.5",
+    "ws": "~6.1.2"
+  },
+  "engines": {
+    "node": ">= 8.9.1",
+    "npm": ">= 5.5.1"
+  }
+}
